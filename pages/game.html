@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine- Sweeper</title>
+    <link rel="stylesheet" href="../styles/game.css">
+    <link rel="icon" href="../images/flag.png">
+</head>
+<body onload="isContinue()" onunload="unload()" id="body">
+
+    <div id="screen">
+        <div id="myTable"></div>
+        <div id="counters">
+            <img src="../images/clock.png">
+            <p id="timer"> </p>
+            <img src="../images/flag2.png">
+            <p id="countFlag"></p>
+        </div>
+    </div>
+    <nav id="menu">
+        <a href="../HomePage.html"><img src="../images/homep.png" class="level"></a>
+        <a href="../pages/instructions.html">Instructions</a><br>
+        <div>Choose Level</div>
+        <div id="level1"><img src="../images/level1.png" class="level"></div>
+        <div id="level2"><img src="../images/level2.png" class="level"></div>
+        <div id="level3"><img src="../images/level3.png" class="level"></div>
+        <div id="newGame">New Game</div><br>
+        <div id="menuOpener"><img src="../images/redBomb.png"> </div>
+    </nav>
+    <div id="alert">
+        <p id="text"></p>
+        <div id="buttons">
+        <div id="playAgain" class="button">Play Again</div>
+        <a href="../HomePage.html"><div class="button">Exit</div></a>
+    </div>
+    </div>
+    <audio controls="controls" id="a4">
+        <source src="../sounds/bomb.mp3" type="audio/mpeg" />
+    </audio>
+    <audio controls="controls"id="a5">
+        <source src="../sounds/bip.mp3" type="audio/mpeg" />
+    </audio>
+    <audio controls="controls" id="a6">
+        <source src="../sounds/gover.mp3" type="audio/mpeg" />
+    </audio>
+    <audio controls="controls" id="a7">
+        <source src="../sounds/win.mp3" type="audio/mpeg" />
+    </audio>
+    <script src="../js/game.js"></script>
+
+</body>
+
+</html>

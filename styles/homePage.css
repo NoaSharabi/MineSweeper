@@ -1,0 +1,182 @@
+body{
+    background-image: url("../images/background.PNG");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+*{
+    font-size: 2vw;
+}
+#div_input {
+    position: relative;
+    top: 3vw;
+    left: 1vw;
+}
+#frame {
+    width: 35vw;
+    height: 20vw;
+    background: linear-gradient(#d65f5f,#fefefe,#80dffa,#2989c3);
+    opacity: 0.9;
+    font-size: 1.5em;
+    font-family: 'Guttman Yad';
+    text-align: center;
+    border-radius: 4vw;
+    top: 18vw;
+    left: 30vw;
+    position: absolute;
+    border: 1vw solid;
+    color: white;
+    margin: auto;
+    z-index: 1;
+    animation-name: home_page_enter;
+    animation-duration: 1s;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    display: block;
+
+}
+#name_label {
+    position: absolute;
+    right: 2.25vw;
+    top: 0.05vw;
+    left: 24vw;
+}
+label {
+    font-family: bfont;
+    font-size: 2.5vw;
+    position: absolute;
+    right: 2.25vw;
+    z-index: 10;
+    top: 4.3vw;
+    color: white;
+    text-shadow: 2px 2px 8px #cd3939;
+    direction: rtl;
+}
+#input_password,#input_name{
+    width: 17vw;
+    height: 2.5vw;
+    border-radius: 1vw;
+    border: solid 0.5vh #cd3939;
+    position: absolute;
+    right: 13.5vw;
+    font-family: bfont;
+    font-size: 1vw;
+    background-color: white;
+}
+.pass_label {
+    position: absolute;
+    right: 2.25vw;
+    left: 24vw;
+    top: 4.5vw;
+}
+#input_password {
+    top: 4.5vw;
+}
+#button1 {
+    margin-top:2vw;
+    position: absolute;
+    top: 8vw;
+    background-color: white;
+    border: 2px solid;
+    box-shadow: 2px 2px 2px 2px rgb(205 57 57);
+    font-family: 'Script MT';
+    font-size: 2vw;
+    left: 12vw;
+    border-radius: 1vw;
+    color: #965d35;
+}
+
+#alert1 {
+    position: absolute;
+    display: none;
+    font-family: bfont;
+    color: red;
+    top: 14vw;
+    left: 2vw;
+    font-size: 2vw;
+}
+#button2 {
+    position: absolute;
+    top: 12.5vw;
+    background-color: white;
+    border: 2px solid;
+    box-shadow: 2px 2px 2px 2px rgb(16 102 153);
+    font-family: bfont;
+    font-size: 1.5vw;
+    left: 1vw;
+    border-radius: 1vw;
+    width: 8vw;
+    height: 2.3vw;
+    color: #965d35;
+    display: none;
+    text-decoration: none;
+}
+.buttons{
+    width: 20vw;
+    height: 4vw;
+    border-radius: 1vw;
+    border: solid 0.5vh #cd3939;
+    position: absolute;
+    /*right: 13.5vw;*/
+    font-family: bfont;
+    font-size: 1vw;
+    background-color: white;
+    direction: rtl;
+    font-size: 2vw;
+    left: 4vw;
+    
+}
+#start{
+    top: 20vw;
+}
+#continue{
+    top:27vw;
+}
+#instructions{
+    top:34vw;
+}
+
+
+@keyframes home_page_enter {
+    0% {
+        opacity: 0.3;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes preduce{
+    0%{
+        margin-left:0vw;
+
+    }
+    100%{
+        margin-left:100vw;
+    }
+}
+footer>div {
+    position: absolute;
+    font-size: 4vw;
+    color: #cd3939;
+    opacity: 0.9;
+    font-family: 'Script MT';
+    z-index: 5;
+    min-width: 100vw;
+    animation: preduce 6s linear infinite;
+    /*top: 44vw;*/
+    bottom: 1.5vw;
+}
+.buttons:hover{
+    background-color: #106699;
+    color: white;
+}
+#f1{
+    display: none;
+}
+
+
+
+
+
+
